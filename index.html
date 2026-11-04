@@ -275,6 +275,7 @@ window.addEventListener("error",function(e){
 
 var KEY="kakandar.v1", DAY=864e5, KEEP_DAYS=180;
 var $=function(s){return document.querySelector(s);};
+var $$=function(s){return Array.prototype.slice.call(document.querySelectorAll(s));};
 var MONTHS=["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
 var MILE=[3,5,7,10,14,21,30,50,75,100,180];
 function plural(n,o,f,m){n=Math.abs(n)%100;var d=n%10;if(n>10&&n<20)return m;if(d>1&&d<5)return f;if(d===1)return o;return m;}
